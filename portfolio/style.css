@@ -1,0 +1,214 @@
+body {
+margin:0;
+padding:0;
+background-color:#fffbf0;
+
+color:#282612;
+font-family:Helvetica;
+font-size:16px;
+
+}
+* {
+box-sizing:border-box;
+
+}
+.intro{
+align-items:center;
+height:400px;
+display:flex;
+gap:1em;
+}
+.nav li {
+text-align:center;
+}
+
+
+
+.profile {
+margin-bottom:6rem;
+}
+
+
+h1, h2, h3, h4{
+
+color:#943d24;
+}
+.myfirst{
+font-size:22px;
+}
+
+.projects{
+margin-top:5rem;
+}
+p{
+height:2em;
+}
+.education, .experience{
+box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+padding:10px;
+font-size:15px;
+max-width:300px;
+background-color:#f7f7f7;
+margin-bottom:1rem;
+}
+
+.first button, .message button {
+	border-radius:15px;
+}
+
+button{
+
+background-color:#943d24;
+
+width:120px;
+padding:5px;
+
+font-size:14px;
+border:none;
+}
+button a{
+text-decoration:none;
+color:#fffbf0;	
+}
+
+.nav li{
+list-style-type:none;
+
+
+}
+.nav li a{
+color:#943d24;
+padding:10px;
+text-decoration:none;
+
+}
+i{
+padding:10px;
+font-size:18px;
+color:#943d24;
+}
+.container{
+display:grid;
+gap:5px;
+}
+.contacts{
+font-size:15px;
+
+}
+
+.contacts input{
+width:95%;
+border-radius:4px;
+box-sizing:border-box;
+padding:10px;
+margin:10px 0;
+border:none;
+background-color:#f7f7f7;
+border-bottom:1px solid #282612;
+outline:none;
+}
+.contacts textarea{
+width:95%;
+padding:10px;
+resize:none;
+height:100px;
+border-radius:4px;
+box-sizing:border-box;
+border:none;
+background-color:#f7f7f7;
+border-bottom:1px solid #282612;
+outline:none;
+}
+.contacts button{
+color:#fffbf0;
+margin:10px 10px;
+padding:5px;
+font-size:14px;
+}
+
+.footer {
+text-align:center;
+font-size:14px;
+
+}
+
+.brand::after{
+content:"";
+clear:both;
+display:table;
+ }
+ nav{
+ margin-top:40px;
+ }
+ .nav {
+ display:flex;
+ flex-direction:column;
+ 
+ align-items:center;
+ }
+ .photo{
+ margin-right:100px;
+ }
+@media only screen and (min-width:600px) {
+.terms{
+display:flex;
+gap:2em;
+
+}
+.terms > *{
+flex:1;
+}
+.contacts{
+display:flex;
+gap:1em;
+}
+
+.contacts > *{
+flex:1;
+}
+}
+
+@media only screen and (min-width:768px) {
+
+.container{
+
+grid-template-columns:1fr 3fr;
+grid-template-rows:auto auto;
+
+}
+
+.intro{
+
+
+margin-bottom:5rem;
+}
+.about{
+margin-bottom:6rem;
+}
+.projects{
+margin-bottom:6rem;
+}
+
+.first{
+flex:2;
+}
+
+.footer{
+
+grid-column:1/3;
+}
+.secbody{
+
+margin-right:4rem;
+}
+.secbody::after {
+content:"";
+clear:both;
+display:table;
+}
+.profile{
+width:80%;
+height:250px;
+margin-bottom:3rem;
+}
+}
